@@ -65,10 +65,6 @@ class Module:
                             "from": str(src.relative_to(self._path)),
                         }
                     ]
-                else:
-                    raise ModuleOrPackageNotFound(
-                        f"No file/folder found for package {name}"
-                    )
 
         for package in packages:
             formats = package.get("format")
