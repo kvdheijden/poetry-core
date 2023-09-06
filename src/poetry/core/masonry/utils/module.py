@@ -9,10 +9,6 @@ if TYPE_CHECKING:
     from poetry.core.masonry.utils.include import Include
 
 
-class ModuleOrPackageNotFound(ValueError):
-    pass
-
-
 class Module:
     def __init__(
         self,
